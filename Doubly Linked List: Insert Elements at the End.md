@@ -35,9 +35,61 @@ To write a Python program that:
 ---
 
 ## 💻 Program
-Add Code here
+```
+class Node:
+    def __init__(self, data):
+        self.item = data
+        self.nref = None  # next reference
+        self.pref = None  # previous reference
 
+
+class DoublyLinkedList:
+    def __init__(self):
+        self.start_node = None
+
+    def insert_in_emptylist(self, data):
+        if self.start_node is None:
+            new_node = Node(data)
+            self.start_node = new_node
+        else:
+            print("List is not empty.")
+
+    
+    def insert_at_end(self, data):
+        if self.start_node is None:
+            self.insert_in_emptylist(data)
+            return
+        new_node = Node(data)
+        n = self.start_node
+        # Traverse to the last node
+        while n.nref is not None:
+            n = n.nref
+        n.nref = new_node
+        new_node.pref = n
+
+    def traverse_list(self):
+        if self.start_node is None:
+            print("The list is empty.")
+            return
+        print("Doubly Linked List elements:")
+        n = self.start_node
+        while n is not None:
+            print(n.item, end=' ')
+            n = n.nref
+        print()
+
+dll = DoublyLinkedList()
+dll.insert_at_end(10)
+dll.insert_at_end(20)
+dll.insert_at_end(30)
+dll.insert_at_end(40)
+dll.traverse_list()
+```
 ## Sample Output
-
+```
+Doubly Linked List elements:
+10 20 30 40 
+```
 ## Result
+Hence Inserted Elements at the End of a Doubly Linked List
 
