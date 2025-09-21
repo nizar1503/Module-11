@@ -36,10 +36,58 @@ To write a Python program that:
 ---
 
 ## 💻 Program
-Add code here
+```
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.next = None
+
+class LinkedList:
+    def __init__(self):
+        self.head = None
+
+    def append(self, data):
+        new_node = Node(data)
+        if not self.head:
+            self.head = new_node
+            return
+        last = self.head
+        while last.next:
+            last = last.next
+        last.next = new_node
+
+    def get_middle_recursive(self, slow, fast):
+        # Base cases: when fast is None (end) or fast.next is None (end - odd or even length)
+        if fast is None:
+            return slow
+        if fast.next is None:
+            return slow.next  # for even length, return second middle node
+
+        # Recursive call: move slow by 1, fast by 2
+        return self.get_middle_recursive(slow.next, fast.next.next)
+
+    def find_middle(self):
+        if not self.head:
+            return None
+        return self.get_middle_recursive(self.head, self.head).data
+
+n = int(input("Enter number of elements: "))
+ll = LinkedList()
+print("Enter the elements separated by spaces:")
+elements = list(map(int, input().split()))
+for el in elements:
+    ll.append(el)
+
+middle = ll.find_middle()
+print("Middle element:", middle)
+```
 
 ## Sample Input & Output
-
+```
+Enter number of elements: 6
+Enter the elements separated by spaces:
+10 20 30 40 50 60
+Middle element: 40
+```
 ## Result
-
-
+Hence Found the Middle Node of a Singly Linked List Using Recursion
