@@ -86,10 +86,8 @@ dll.insert_at_end(40)
 dll.traverse_list()
 ```
 ## Sample Output
-```
-Doubly Linked List elements:
-10 20 30 40 
-```
+<img width="390" height="150" alt="image" src="https://github.com/user-attachments/assets/61fa9b32-0cf0-47b4-8636-da4fbd943d84" />
+
 ## Result
 Hence Inserted Elements at the End of a Doubly Linked List
 
