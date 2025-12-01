@@ -83,11 +83,7 @@ print("Middle element:", middle)
 ```
 
 ## Sample Input & Output
-```
-Enter number of elements: 6
-Enter the elements separated by spaces:
-10 20 30 40 50 60
-Middle element: 40
-```
+<img width="329" height="144" alt="image" src="https://github.com/user-attachments/assets/54569d9a-8fe1-4eb9-8624-234666b1dfb4" />
+
 ## Result
 Hence Found the Middle Node of a Singly Linked List Using Recursion
