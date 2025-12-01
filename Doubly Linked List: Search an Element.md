@@ -94,10 +94,7 @@ print("Search 20:", "Found" if dll.search(20) else "Not Found")
 print("Search 60:", "Found" if dll.search(60) else "Not Found")
 ```
 ## Sample Output
-```
-Doubly Linked List: [10, 20, 30, 40, 50]
-Search 20: Found
-Search 60: Not Found
-```
+<img width="461" height="143" alt="image" src="https://github.com/user-attachments/assets/172c5f75-9203-4b19-8f00-9120dd79af3a" />
+
 ## Result
 Hence  Searched an Element in Doubly Linked List.
