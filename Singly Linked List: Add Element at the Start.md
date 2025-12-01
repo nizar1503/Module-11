@@ -66,8 +66,7 @@ MyList.push_front(40)
 MyList.PrintList()
 ```
 ## Sample Output
-```
-40 -> 30 -> 20 -> 10
-```
+<img width="638" height="163" alt="image" src="https://github.com/user-attachments/assets/5ecb16ff-e1df-4414-8dbf-57320d1a4e55" />
+
 ## Result
 Hence Added Element at the Start of Singly Linked List.
