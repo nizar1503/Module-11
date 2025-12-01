@@ -59,9 +59,6 @@ else:
     print("No")
 ```
 ## Sample Output
-```
-Enter element to search: 21
-Yes
-```
+<img width="434" height="100" alt="image" src="https://github.com/user-attachments/assets/549bce3f-bd9a-41ff-899d-bae9acfc2e44" />
 ## Result
 Hence Searched an Element in a Linked List.
